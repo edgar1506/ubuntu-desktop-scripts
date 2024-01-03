@@ -168,8 +168,6 @@ sub-enable-os-controlled-networking
 
 sub-install-nomachine
 
-sub-install-and-configue-ufw
-
 sub-configue-nomachine-user
 
 run-cmd "sudo reboot"
