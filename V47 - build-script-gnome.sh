@@ -81,7 +81,7 @@ sub-install-nomachine ()
  echo ""
  echo ""
  echo "================================================================="
- echo " Install NoMachine v8.4.1 amd64  "
+ echo " Install NoMachine v8.4.1 arm64  "
  echo "-----------------------------------------------------------------"
  read -p "Proceed ? (Y/n)" choice
  if [ "$choice" = "n" ]
@@ -92,8 +92,8 @@ sub-install-nomachine ()
        echo "Bypassing...." 
     else 
        echo "Running..."
-       sudo wget https://download.nomachine.com/download/8.4/Linux/nomachine_8.4.2_1_amd64.deb
-       sudo apt install -f ./nomachine_8.4.2_1_amd64.deb
+       sudo curl -fSL "https://www.nomachine.com/free/arm/64/deb" -o nomachine_arm64.deb
+       sudo apt install -f ./nomachine_arm64.deb
 fi
 }
 
