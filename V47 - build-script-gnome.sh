@@ -171,5 +171,10 @@ sub-install-nomachine
 sub-configue-nomachine-user
 
 run-cmd "sudo reboot"
-             
+
+#==========IMPORTANT==============
+#If you don't get a screen when trying to connect via NoMachine client after rebooting, then proceed as follows:
+# - Edit the /etc/gdm3/custom.conf file and uncomment WaylandEnable=false
+      
 # ========= SCRIPT END ============
+
